@@ -36,16 +36,10 @@ td {
 .button {
 }
 
-#wykres {
+#t-chart {
     margin: 2% 25% 0 25%;
 }
 
-.axis--x path {
-
-}
-
-.line {
-    fill: none;
-    stroke: steelblue;
-    stroke-width: 1.5px;
+#r-chart {
+    margin: 0 25% 0 25%;
 }

@@ -1,19 +1,18 @@
 nv.addGraph(function() {
-    var chart = nv.models.lineChart()
-        .useInteractiveGuideline(true)
+    var chart = nv.models.discreteBarChart()
     ;
 
     chart.xAxis
-        .axisLabel('Time (ms)')
+        .axisLabel('Data')
         .tickFormat(d3.format(',r'))
     ;
 
     chart.yAxis
-        .axisLabel('Voltage (v)')
-        .tickFormat(d3.format('.02f'))
+        .axisLabel('Opad (mm)')
+        .tickFormat(d3.format('.01f'))
     ;
 
-    d3.select('#chart svg')
+    d3.select('#r-chart svg')
         .datum(data())
         .transition().duration(500)
         .call(chart)
