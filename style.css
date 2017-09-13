@@ -1,10 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
 
+* {
+    font-family: 'Lato', sans-serif;
+    color: #182d45;
+}
+
+.glowna {
+    background-color: #00669e;
+    align-content: center;
+}
 
 h1 {
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    margin-top: 0;
+    padding-top: 1%;
+
 }
 
-#btn {
-    float: left;
+table {
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+td {
+    width: 25%;
+    font-weight: bolder;
+}
+
+.button {
+}
+
+#wykres {
+    margin: 2% 25% 0 25%;
+}
+
+.axis--x path {
+
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
 }
