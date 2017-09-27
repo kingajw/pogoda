@@ -43,3 +43,7 @@ td {
 #r-chart {
     margin: 0 25% 0 25%;
 }
+
+.bar {
+    fill: steelblue;
+}

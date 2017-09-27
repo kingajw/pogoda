@@ -2,11 +2,6 @@ nv.addGraph(function() {
     var chart = nv.models.discreteBarChart()
     ;
 
-    chart.xAxis
-        .axisLabel('Data')
-        .tickFormat(d3.format(',r'))
-    ;
-
     chart.yAxis
         .axisLabel('Opad (mm)')
         .tickFormat(d3.format('.01f'))
@@ -14,6 +9,7 @@ nv.addGraph(function() {
 
     d3.select('#r-chart svg')
         .datum(data())
+        .attr("class", "bar")
         .transition().duration(500)
         .call(chart)
     ;

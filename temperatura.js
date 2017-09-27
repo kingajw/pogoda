@@ -1,6 +1,5 @@
 nv.addGraph(function() {
     var chart = nv.models.lineChart()
-
     ;
 
     chart.xAxis
