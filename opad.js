@@ -8,7 +8,7 @@ nv.addGraph(function() {
     ;
 
     d3.select('#r-chart svg')
-        .datum(data())
+        .datum(tData())
         .attr("class", "bar")
         .transition().duration(500)
         .call(chart)
